@@ -1,0 +1,17 @@
+<div class="slider">
+	<div class="item" ng-repeat="image in images" ng-show="image.visible">
+		<img ng-src="img/{{image.src}}"/>
+		<span>{{image.id}}/3</span>
+		<div class="detail">
+			<h2>{{image.title}}</h2>
+			<p>{{image.description}}</p>
+		</div>
+		<div class="arrowRight">
+			<a href="#"><img src="img/arrow-right.svg" alt=""></a>
+		</div>
+	</div>
+	<div class="arrows">
+		<a href="#" ng-click="prev()"><img src="img/arrow-up.svg"/></a>
+		<a href="#" ng-click="next()"><img src="img/arrow-down.svg"/></a>
+	</div>
+</div>
